@@ -662,6 +662,13 @@
       .header {
         padding: 2rem 3%;
       }
+      .header #nav-menu a:first-child{
+        margin-block-end: auto;
+      }
+      /* #HomeLink{
+        margin-top:0px;
+      } */
+      
       section {
         padding: 10rem 3% 2rem;
       }
@@ -690,7 +697,7 @@
       #home{
         height: 15%;
         border: solid rgb(216, 142, 216) 2px;
-        margin-top: 2px;
+        margin-top: 51px;
       }
       .home-content{
         margin-left: 7%;
@@ -768,22 +775,33 @@
   
   
     }
-  
     @media (max-width: 450px){
       html {
         font-size: 50%;
       }
+      .home{
+        display:block;
+        margin:auto;
+      }
       .home-img{
-        margin-right: 15px;
+        width: 100%;
+        margin: auto;
+        margin-top: -150px;
       }
   .contact form .input-box input {
     width: 100%;
   }
     }
-    @media (max-width: 365px){
-      .home-img img {
-        width: 90vw;
-        margin-right: 2rem;
+    /* @media (max-width: 365px){
+    
+      .home{
+        display:block;
+        margin:auto;
+      }
+      .home-img{
+        width: 80%;
+        margin: auto;
+      
       }
       .footer {
         flex-direction: column-reverse;
@@ -792,11 +810,10 @@
         text-align: center;
         margin-top: 2rem;
       }
-    }
+    } */
     .calender {
   margin: 20px;
     }
-  
     @media (min-width: 575px) {
       .home { position: relative; }
   
