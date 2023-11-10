@@ -388,32 +388,33 @@
       border-radius: 2rem;
       box-shadow: 0 0 1rem var(--bg-carolina-blue);
       overflow: hidden;
-      display: flex;
-    
+       display: block;
     }
+  
     .project-card img {
       width: 100%;
       transition: .5s ease;
     }
-    .project-card:hover img {
-      transform: scale(1.1);
+    .project-container .project-card:hover{
+      transform: scale(1.5);
+    }
+    .project-card{
+      width:100%;
+      transition: 0.5s ease;
     }
     
     .project-card .project-layer {
-      position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(rgba(0, 0, 0, .1), var(--bg-prussian-blue) );
+      background: rgb(221,90,221);
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       text-align: center;
-      padding: 0 4rem;
-      transform: translate(100%);
-      transition: .5s ease;
+      padding: 0.75rem .25rem;
     }
     .project-card:hover .project-layer {
       transform: translateY(0);
@@ -465,6 +466,22 @@
     #github-stats{
       margin-top: 5%;
     }
+
+#github-stats .calender div .stats a img:first-child {
+      display: block;
+      margin: 0 auto;
+    }
+#github-stats .calender div .stats a #github-stats-card {
+      display: block;
+      margin: 0 auto;
+    }
+#github-stats .calender div .stats a #github-top-langs{
+  display: block;
+  margin: 0 auto;
+}
+
+
+    
   
     .heading{
       margin-bottom: 5%;
@@ -525,6 +542,7 @@
     background: var(--);
     background: var(--bg-oxford-blue);
     text-align: center;
+    padding-top: 35px;
   }
   
   #contact > div > p {
@@ -686,6 +704,7 @@
         width: 55%;
         margin-left: 20%;
         margin-bottom: 70%;
+        margin-right: 2rem;
         /* border: solid red; */
          
       }  
@@ -728,8 +747,9 @@
     font-size: 5rem;
   }
   .home-img {
-    width: 40vw;
+    width: 30vw;
     margin-top: 1rem;
+    margin-right: 2rem;
   }
   .about {
     flex-direction: column-reverse;
@@ -753,6 +773,9 @@
       html {
         font-size: 50%;
       }
+      .home-img{
+        margin-right: 15px;
+      }
   .contact form .input-box input {
     width: 100%;
   }
@@ -760,6 +783,7 @@
     @media (max-width: 365px){
       .home-img img {
         width: 90vw;
+        margin-right: 2rem;
       }
       .footer {
         flex-direction: column-reverse;
